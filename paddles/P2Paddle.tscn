@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://6sdceoegc36b"]
+
+[ext_resource type="Script" uid="uid://bea8iq3csbo7" path="res://paddles/P2Paddle.gd" id="1_ahtl4"]
+[ext_resource type="Texture2D" uid="uid://bvjx878ne0obb" path="res://icon.svg" id="2_mta8t"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a8vcx"]
+size = Vector2(56, 161)
+
+[node name="P2Paddle" type="CharacterBody2D" unique_id=1540357588 groups=["paddles"]]
+motion_mode = 1
+slide_on_ceiling = false
+script = ExtResource("1_ahtl4")
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1170468530]
+shape = SubResource("RectangleShape2D_a8vcx")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1238126766]
+position = Vector2(0, 0.5000057)
+scale = Vector2(0.453125, 1.2578125)
+texture = ExtResource("2_mta8t")

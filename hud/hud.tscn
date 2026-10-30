@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://cei8rf1s5tolj"]
+
+[ext_resource type="Script" uid="uid://be4vdy7y4j2yd" path="res://hud/hud.gd" id="1_6ca3a"]
+
+[node name="HUD" type="Control" unique_id=1632080052]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_6ca3a")
+
+[node name="P1Score" type="Label" parent="." unique_id=2090439886]
+layout_mode = 1
+offset_right = 40.0
+offset_bottom = 88.0
+theme_override_font_sizes/font_size = 64
+text = "0"
+
+[node name="P2Score" type="Label" parent="." unique_id=428020038]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -40.0
+offset_bottom = 23.0
+grow_horizontal = 0
+theme_override_font_sizes/font_size = 64
+text = "0"
